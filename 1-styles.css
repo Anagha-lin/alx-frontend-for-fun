@@ -1,0 +1,21 @@
+h2 a {
+    text-decoration: none;
+    position: relative;
+    color: #000; /* Adjust the color if needed */
+}
+
+h2 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the position of the underline */
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #000; /* Adjust the color of the underline */
+    transition: width 0.4s ease; /* Controls the speed of the underline animation */
+}
+
+h2 a:hover::after {
+    width: 100%;
+}
+
